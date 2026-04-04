@@ -1,0 +1,32 @@
+{
+	"name": "n8n-nodes-lightsprint",
+	"version": "0.1.0",
+	"description": "n8n community node for Lightsprint — manage tasks, comments, and AI agents",
+	"license": "MIT",
+	"keywords": ["n8n-community-node-package"],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/LightsprintOAuth2Api.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Lightsprint/Lightsprint.node.js"
+		]
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": ["dist"],
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"typescript": "~5.9.3"
+	}
+}

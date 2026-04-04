@@ -1,0 +1,14 @@
+{
+	"node": "n8n-nodes-lightsprint.lightsprint",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Productivity"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/nicepkg/n8n-nodes-lightsprint"
+			}
+		]
+	},
+	"alias": ["lightsprint", "task", "project management", "ai agent"]
+}
