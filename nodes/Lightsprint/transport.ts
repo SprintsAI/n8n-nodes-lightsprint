@@ -1,7 +1,7 @@
 import type {
 	IExecuteFunctions,
 	IHttpRequestMethods,
-	IRequestOptions,
+	IHttpRequestOptions,
 	JsonObject,
 } from 'n8n-workflow';
 import { NodeApiError } from 'n8n-workflow';
@@ -40,9 +40,9 @@ export async function lightsprintApiRequest(
 	body?: object,
 	query?: Record<string, string | number | boolean>,
 ): Promise<any> {
-	const options: IRequestOptions = {
+	const options: IHttpRequestOptions = {
 		method,
-		uri: `${BASE_URL}${endpoint}`,
+		url: `${BASE_URL}${endpoint}`,
 		json: true,
 	};
 
@@ -55,7 +55,7 @@ export async function lightsprintApiRequest(
 	}
 
 	try {
-		return await this.helpers.requestWithAuthentication.call(
+		return await this.helpers.httpRequestWithAuthentication.call(
 			this,
 			'lightsprintOAuth2Api',
 			options,
