@@ -32,5 +32,16 @@
 	"devDependencies": {
 		"@n8n/node-cli": "*",
 		"typescript": "~5.9.3"
+	},
+	"overrides": {
+		"axios": "^1.15.2",
+		"handlebars": "^4.7.9",
+		"langsmith": "^0.6.0",
+		"lodash": "^4.18.1",
+		"minimatch": "^9.0.7",
+		"uuid": "^13.0.1",
+		"follow-redirects": "^1.16.0",
+		"@langchain/community": "^1.1.28",
+		"ws": "^8.20.1"
 	}
 }
