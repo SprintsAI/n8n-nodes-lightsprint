@@ -34,14 +34,18 @@
 		"typescript": "~5.9.3"
 	},
 	"overrides": {
-		"axios": "1.15.2",
+		"axios": "1.18.1",
+		"form-data": "4.0.6",
 		"handlebars": "4.7.9",
 		"langsmith": "0.6.0",
 		"lodash": "4.18.1",
 		"minimatch": "9.0.7",
+		"js-yaml": "5.2.0",
 		"uuid": "13.0.1",
 		"follow-redirects": "1.16.0",
+		"tmp": "0.2.7",
 		"@langchain/community": "1.1.28",
-		"ws": "8.20.1"
+		"undici": "6.27.0",
+		"ws": "8.21.0"
 	}
 }
